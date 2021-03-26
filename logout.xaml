@@ -1,0 +1,139 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="logout" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="721,1275" sap2010:WorkflowViewState.IdRef="logout_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="25">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="18">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="logout" sap:VirtualizedContainerService.HintSize="594,1070" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:Browser" Name="LogoutBrowser" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser to log out" sap:VirtualizedContainerService.HintSize="552,978" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="65023ff64c54f9f3e504f41bfedddefc" Selector="&lt;html app='chrome.exe' title='Xero | Dashboard | dipoleDiamond' /&gt;" UiBrowser="[LogoutBrowser]">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,832" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="476,740" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window to get the log out details" sap:VirtualizedContainerService.HintSize="434,648" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="e1a718aa8460d6e9abebbef5d78a54e0" Selector="&lt;html app='chrome.exe' title='Xero | Dashboard | dipoleDiamond' /&gt;">
+                <ui:WindowScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,502" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on AD" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                        <ui:ClickImage.CursorPosition>
+                          <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
+                        </ui:ClickImage.CursorPosition>
+                        <ui:ClickImage.Image>
+                          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAjCAYAAAAJ+yOQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVFhH1Zi9SgNBEMfzCJaWaX0Om6QUbIVL4xskZyNWdrlC4RBEQ0BEEENeIwGxsLMwYmMlgvgA6/2TG7Mfs3sfxL274ndcZmdv/u7c7M7Zah3NhE54/SEmkx8vIBanQUE3+BRIZAqVfxxevLMP8QFiy1oU6GY3emEn+wQaFHEELlvHj+Lm/pud6BNogBZWZJVp1mHTvn3yxDpXCTQpIg/iN9axSqBJEXl598U6Vgk0KSI5pzqwc/pcXmTU2xPtdkJnKsbG+FwEGONg/e3sn7+WFSmL6IvByDXOEYtI8bcTXkmnEOdgYxz2l8GCXrwK2ptrPiRSF7MW3w0Xkt3O2e1nGZELMeiQAPle9rGJTBhNRRdjOdOOjb24SAqSrh6tqroyDpHOMZOHhMIiqWCCIdnSoMrK5BHJvcsmJURSAA456OZEFk/3MC0UG38F5BBJr0vOdBcuHDPVhC7KJpIKLX91F9uCMlaA/oBVcBJpI98qgkKbOVWxuSem0KuwLCCHSNt8C8qx2IgGoxGtWiOaXlxq//mASyM+xEDtP2mJKtPOppnQDbX/NwvhU2imQMAaE3yk3pliGdaYghf5P6oez7QWCQdrlMCWsMlVxbPYbcYFa2TAKYDjqsxZjzmYa5wkeWGNGaBDQSuFng/NKdKHdh/gHjaMwUfpZkoxE7/s4aa5QaQcSQAAAABJRU5ErkJggg==" />
+                        </ui:ClickImage.Image>
+                        <ui:ClickImage.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a176d252-d75e-48b7-95e7-da0bbd03f187" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;ol&amp;gt;li' idx='10' tag='LI' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:ClickImage.Target>
+                      </ui:ClickImage>
+                      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on log out" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                        <ui:ClickImage.CursorPosition>
+                          <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
+                        </ui:ClickImage.CursorPosition>
+                        <ui:ClickImage.Image>
+                          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMIAAAAyCAYAAAAOcwQoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJSSURBVHhe7dmxSiNBGMDx1D6Ez2JnY+WBlY14CNqfzVkoBALeVYKPYJHOpwikkOMKqzu4RojkJT6/mZ0Zx3WSNSYzZs7/Dwayu9mQ4vvvrrEnAIQQAEUIgCIEQBECoAgBUIQAKEIAFCEAihAARQiAIgRAEQKgCAFQhAAoQgAUIQCqSAh//v6Ts4sfsrW9Z5d5bfYB6yJ7CGbgd74chAj8MvuIAesiewjfzy/t4A9+XsvkcWqXeW32mWPlTOVmf1N2h1O3XZOpjMY1fu96ZA/B3wFMAJ557feXU2sINQdcj2IhtBHCWxFCCYTQNr6S3sZmWK/e/3Aru9Hx/tBsH8nNgzueMuczJ8Mj6e3fysRtG8/7mu8czm29D6tDCBE7gPFQu6F/PudO+ontF+e0dH3m/BAM7gglZAvh8PhbGPau9fXk1J2VU9dApY/HQ5ka2uZqPyuE930mIZSXLYTUwM9b+XUNVHN174/dpmev4Fcy0pejgV79B3fNfs8enxVC92cSwnoghGDG0Nor/opDiD6TENYDIQTp4/FQpoY2x6ORDY4Qiioawq/f93aljuXXPVB2KOf8Yeuv8O3tZf5Y9r8ohbuGOx7HkbwTYaU+XQjhp8h4xVdkN5h+vQrHD6pby/58ajSxuOP6XUbtu0Q4v3mcwup9okejTGwYDGjtCGEBzZU7Hnp3l+GxpXqEsCD7vO4fY8wigv9CthAW+YeaeS/wkbKFANSEEABFCIAiBEARAqAIAVCEAChCABQhAIoQAEUIgCIEQBECoAgBUIQAKEIAROQJ8lFfOASw5zYAAAAASUVORK5CYII=" />
+                        </ui:ClickImage.Image>
+                        <ui:ClickImage.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d240b616-7ff7-40bf-a7a8-fde33608fa0b" Selector="&lt;webctrl aria-role='listbox' idx='6' tag='DIV' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:ClickImage.Target>
+                      </ui:ClickImage>
+                      <ui:CloseTab Browser="[LogoutBrowser]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:WindowScope.Body>
+              </ui:WindowScope>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>
